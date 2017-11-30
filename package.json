@@ -1,0 +1,27 @@
+{
+  "name": "chatapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "moment": "^2.19.1",
+    "nodemon": "^1.12.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-modal": "^3.1.0",
+    "react-scripts": "1.0.14",
+    "socket.io": "^2.0.4",
+    "styled-components": "^2.2.2",
+    "uuid": "^3.1.0"
+  },
+  "scripts": {
+    "start": "concurrently 'PORT=8080 npm run react' 'npm run server'",
+    "react": "react-scripts start",
+    "server": "nodemon src/server/index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
