@@ -183,7 +183,7 @@ onMessageSend() {
             </div>
 
             <div className='button-container'>
-              <button className='button'  onClick={this.openModal} >Select new nickname</button>
+              <button className='button' onClick={this.openModal} >Select new nickname</button>
               <NameSelect 
                 isOpen={this.state.modalIsOpen}
                 onPopupClosed={this.handleModalClose.bind(this)}
